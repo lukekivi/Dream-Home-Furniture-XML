@@ -1,4 +1,4 @@
-package com.example.dreamhomefurniturecompose.network
+package com.dreamhomefurniturexml.network
 
 data class NetworkResponse(
     val furnitureDataList: List<FurnitureData>

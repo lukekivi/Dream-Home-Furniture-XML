@@ -1,4 +1,4 @@
-package com.myapplication
+package com.dreamhomefurniturexml
 
 import org.junit.Test
 

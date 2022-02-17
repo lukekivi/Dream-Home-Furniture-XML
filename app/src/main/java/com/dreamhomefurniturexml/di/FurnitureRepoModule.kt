@@ -1,9 +1,9 @@
-package com.example.dreamhomefurniturecompose.di
+package com.dreamhomefurniturexml.di
 
-import com.example.dreamhomefurniturecompose.data.FurnitureRepo
-import com.example.dreamhomefurniturecompose.data.FurnitureRepoImpl
-import com.example.dreamhomefurniturecompose.network.FurnitureNetworkService
-import com.example.dreamhomefurniturecompose.network.FurnitureNetworkServiceImpl
+import com.dreamhomefurniturexml.data.FurnitureRepo
+import com.dreamhomefurniturexml.data.FurnitureRepoImpl
+import com.dreamhomefurniturexml.network.FurnitureNetworkService
+import com.dreamhomefurniturexml.network.FurnitureNetworkServiceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

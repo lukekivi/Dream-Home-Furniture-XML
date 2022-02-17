@@ -1,4 +1,4 @@
-package com.example.dreamhomefurniturecompose.network
+package com.dreamhomefurniturexml.network
 
 import kotlinx.coroutines.delay
 import javax.inject.Inject

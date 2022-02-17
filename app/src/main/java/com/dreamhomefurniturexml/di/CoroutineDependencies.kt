@@ -1,4 +1,4 @@
-package com.example.dreamhomefurniturecompose.di
+package com.dreamhomefurniturexml.di
 
 import dagger.Module
 import dagger.Provides

@@ -1,9 +1,7 @@
-package com.example.dreamhomefurniturecompose.data
+package com.dreamhomefurniturexml.data
 
 import android.util.Log
-import com.example.dreamhomefurniturecompose.network.FurnitureData
-import com.example.dreamhomefurniturecompose.network.FurnitureNetworkService
-import kotlinx.coroutines.CoroutineDispatcher
+import com.dreamhomefurniturexml.network.FurnitureNetworkService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow

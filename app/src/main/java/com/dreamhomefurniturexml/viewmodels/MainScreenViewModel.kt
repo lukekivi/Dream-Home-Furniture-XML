@@ -1,11 +1,11 @@
-package com.example.dreamhomefurniturecompose.viewmodels
+package com.dreamhomefurniturexml.viewmodels
 
 import androidx.annotation.StringRes
 import androidx.lifecycle.ViewModel
-import com.example.dreamhomefurniturecompose.R
-import com.example.dreamhomefurniturecompose.data.FurnitureRepo
-import com.example.dreamhomefurniturecompose.data.FurnitureResponse
-import com.example.dreamhomefurniturecompose.network.FurnitureData
+import com.dreamhomefurniturexml.data.FurnitureRepo
+import com.dreamhomefurniturexml.data.FurnitureResponse
+import com.dreamhomefurniturexml.network.FurnitureData
+import com.myapplication.R
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow

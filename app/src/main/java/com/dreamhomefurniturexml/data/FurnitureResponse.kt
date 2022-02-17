@@ -1,6 +1,6 @@
-package com.example.dreamhomefurniturecompose.data
+package com.dreamhomefurniturexml.data
 
-import com.example.dreamhomefurniturecompose.network.FurnitureData
+import com.dreamhomefurniturexml.network.FurnitureData
 
 sealed class FurnitureResponse {
     object Uninitialized : FurnitureResponse()
