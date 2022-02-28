@@ -8,4 +8,11 @@
     <string name="filter_item_dressers">Dressers</string>
     <string name="filter_item_nightstands">Nightstands</string>
     <string name="filter_item_vanity_tables">Vanity Tables</string>
+    <string name="furniture_price_title">Our Price</string>
+    <string name="furniture_compare_button">COMPARE</string>
+    <string name="furniture_image_content_description">Furniture image</string>
+    <string name="default_furniture_title">Furniture Title</string>
+    <string name="default_furniture_vendor">Furniture Vendor</string>
+    <string name="default_furniture_collection">Furniture Collection</string>
+    <string name="default_furniture_price">$10,000</string>
 </resources>

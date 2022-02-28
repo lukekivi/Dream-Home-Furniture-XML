@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="210dp">
+
+    <ImageView
+        android:id="@+id/furniture_image"
+        android:layout_width="175dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/furniture_image_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/furniture_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/default_furniture_title"
+        android:textColor="@color/dream_home_blue"
+        app:layout_constraintBottom_toTopOf="@+id/furniture_info"
+        app:layout_constraintStart_toEndOf="@id/furniture_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/furniture_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/furniture_image"
+        app:layout_constraintTop_toBottomOf="@id/furniture_title"
+        app:layout_constraintBottom_toTopOf="@id/furniture_price_title">
+
+        <TextView
+            android:id="@+id/furniture_vendor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/default_furniture_vendor"
+            android:textColor="@color/dream_home_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/furniture_collection"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/furniture_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="1dp"
+            android:text="@string/default_furniture_collection"
+            android:textColor="@color/dream_home_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/furniture_vendor" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/furniture_price_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/furniture_price_title"
+        app:layout_constraintBottom_toTopOf="@+id/furniture_compare_button"
+        app:layout_constraintEnd_toStartOf="@+id/furniture_price"
+        app:layout_constraintStart_toEndOf="@+id/furniture_image"
+        app:layout_constraintTop_toBottomOf="@+id/furniture_info" />
+
+    <TextView
+        android:id="@+id/furniture_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/default_furniture_price"
+        android:textColor="@color/green"
+        app:layout_constraintBottom_toTopOf="@+id/furniture_compare_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/furniture_price_title"
+        app:layout_constraintTop_toBottomOf="@+id/furniture_info" />
+
+    <Button
+        android:id="@+id/furniture_compare_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@color/dream_home_blue"
+        android:text="@string/furniture_compare_button"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/furniture_image"
+        app:layout_constraintTop_toBottomOf="@+id/furniture_price_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
