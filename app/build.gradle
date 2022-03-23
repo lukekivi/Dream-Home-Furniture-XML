@@ -6,12 +6,12 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 31
 
     defaultConfig {
         applicationId "com.myapplication"
         minSdk 24
-        targetSdk 30
+        targetSdk 31
         versionCode 1
         versionName "1.0"
 
@@ -35,6 +35,7 @@ android {
 
 dependencies {
 
+    implementation "androidx.activity:activity-ktx:$activity_version"
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.5.0'
@@ -52,4 +53,14 @@ dependencies {
 
     // Coroutines for asynchronous operations
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+
+    // image loading
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+}
+
+kapt {
+    correctErrorTypes = true
 }
