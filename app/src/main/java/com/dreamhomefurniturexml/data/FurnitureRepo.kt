@@ -1,6 +1,7 @@
 package com.dreamhomefurniturexml.data
 
 import android.util.Log
+import com.dreamhomefurniturexml.network.FurnitureData
 import com.dreamhomefurniturexml.network.FurnitureNetworkService
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
@@ -43,4 +44,10 @@ class FurnitureRepoImpl @Inject constructor(
             _furnitureResponseFlow.emit(response)
         }
     }
+}
+
+sealed class FurnitureResponse {
+    object Uninitialized : FurnitureResponse()
+    class Success(val simpleFurnitureDataList: List<FurnitureData>) : FurnitureResponse()
+    class Error(val message: String) : FurnitureResponse()
 }

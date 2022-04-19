@@ -19,7 +19,7 @@ data class FurnitureCardData(
     val imageUrl: String?
 )
 
-class FurnitureCard(context: Context, attrs: AttributeSet): ConstraintLayout(context, attrs) {
+class FurnitureCard(context: Context): ConstraintLayout(context) {
 
     private val furnitureImage: ImageView
     private val furnitureTitle: TextView
