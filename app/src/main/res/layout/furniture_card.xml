@@ -5,13 +5,13 @@
     android:id="@+id/furniture_card"
     android:layout_width="match_parent"
     android:layout_height="210dp"
-    android:background="@drawable/furniture_card_border"
-    android:padding="16dp" >
+    android:background="@drawable/furniture_card_border">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/furniture_image_column"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:padding="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/furniture_details_column"
@@ -36,6 +36,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
+        android:padding="8dp"
         app:layout_constraintStart_toEndOf="@id/furniture_image_column"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportActionBar?.hide()
         setContentView(R.layout.activity_main)
 
         furnitureCardRecyclerView = findViewById(R.id.furniture_card_recycler_view)
@@ -39,11 +40,10 @@ class MainActivity : AppCompatActivity() {
                              * If there is data in the simpleFurnitureDataList update [furnitureCard] to display it
                              */
                             furnitureCardRecyclerView.adapter = FurnitureCardAdapter(
-                                    mainScreenContent.furnitureDataState.simpleFurnitureDataList
+                                    mainScreenContent.furnitureDataState.simpleFurnitureDataList,
+                                    this@MainActivity
                                 )
 
-                            // Use this setting to improve performance if you know that changes
-                            // in content do not change the layout size of the RecyclerView
                             furnitureCardRecyclerView.setHasFixedSize(true)
                         }
                         else -> {
