@@ -38,7 +38,7 @@ class FurnitureCardAdapter(
      */
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
         holder.furnitureCard.update(furnitureCardDataList[position])
-        holder.furnitureCard.setCompareButtonOnClickListener { Log.d("CompareButton", "Card $position was clicked") }
+        holder.furnitureCard.setCompareButtonOnClickListener { Log.d("CompareButton", "${furnitureCardDataList[position].title} was clicked") }
     }
 
     /**
